@@ -1,0 +1,33 @@
+{
+    "name": "hanfy/batch-zip-stream",
+    "description": "A memory-efficient, batchable PHP library to stream ZIP archive creation incrementally.",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Ahmed Hanfy",
+            "email": "ahanfybekheet@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-zlib": "*",
+        "ext-hash": "*",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "BatchZipStream\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BatchZipStream\\Tests\\": "tests/"
+        }
+    }
+}
